@@ -1,3 +1,8 @@
+## 介绍/Intro
+本知识库使用Obsidian，由[Hong Liu](https://github.com/hongliu114)整理；目前已包括本人大一下开始的大多数课程。作为一个知识库备份防止意外，并顺便共享在Github上。一些地方未经过重新检查可能很杂乱潦草，一部分笔记经过整理成pdf已发布在我的个人博客[HongLiu的小站](https://hongliu.icu/)上，欢迎访问。
+
+知识库的名字来源是自己起的“泛数理知识库(General Math-Physical Base)”。
+
 ## 数学
 [[复变函数/0 复变函数-目录|复变函数-目录]]
 [[0 线性代数-目录|线性代数-目录]]
@@ -23,8 +28,6 @@
 [[0 机器人学基础-目录|机器人学基础-目录]]
 
 ---
-[[鸢尾花书-目录]]
-
 # 热力图
 ```contributionGraph
 title: M-P库
@@ -53,3 +56,8 @@ cellStyle:
   minHeight: 20px
 
 ```
+---
+
+> </br><center>牧野洋洋，檀车煌煌。</center></br>
+
+

@@ -28,3 +28,10 @@
 ## Bug实录
 #### Git clone报错：ERROR: RPC failed;
 [应对方法](https://blog.csdn.net/JISOOLUO/article/details/103625488)
+#### fatal: The remote end hung up unexpectedly
+原因：有文件过大
+处理方式：用.gitignore排除或者删除文件
+参考链接：[Git忽略文件的几种方法，以及.gitignore文件的忽略规则](https://blog.csdn.net/qq_41428418/article/details/132737503)
+> [!tip]
+> 若处理后还是提示这些文件报错，可能是Git 的历史记录中仍然保留了大文件的记录；我采用的办法是重建git仓库（简单粗暴），据AI所述还有git filter-repo等彻底删除大文件的方法，没试过。
+
