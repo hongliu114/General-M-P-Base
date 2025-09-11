@@ -1,0 +1,9 @@
+{
+  "interfaceFontFamily": "Inter,思源宋体",
+  "textFontFamily": "Inter,思源黑体",
+  "baseFontSize": 18,
+  "baseFontSizeAction": false,
+  "theme": "moonstone",
+  "cssTheme": "Border",
+  "accentColor": ""
+}
