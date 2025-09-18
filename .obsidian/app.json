@@ -10,5 +10,6 @@
     "downscalePercent": 100
   },
   "newFileLocation": "current",
-  "rightToLeft": false
+  "rightToLeft": false,
+  "newLinkFormat": "shortest"
 }
