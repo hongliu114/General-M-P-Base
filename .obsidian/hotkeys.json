@@ -24,5 +24,15 @@
       ],
       "key": "1"
     }
-  ]
+  ],
+  "obsidian-excalidraw-plugin:insert-link": [],
+  "editor:insert-table": [
+    {
+      "modifiers": [
+        "Mod"
+      ],
+      "key": "T"
+    }
+  ],
+  "workspace:new-tab": []
 }
