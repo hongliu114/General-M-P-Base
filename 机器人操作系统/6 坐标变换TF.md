@@ -1,0 +1,26 @@
+好像不是重点的样子……
+## 作业
+> 在rviz2中显示urdf模型时，我们需要启动robot_state_publisher节点并设置其节点参数robot_description；对于活动关节还需要启动joint_state_publisher_gui节点，请阐述相关节点和话题以及参数的作用，说明其通信过程。
+
+![](file:///C:\Users\HONGLI~1\AppData\Local\Temp\ksohtml30276\wps1.png)
+节点robot_state_publisher通过读取urdf文件内容，发布话题robot_description，用于rviz2显示模型，同时发布活动关节相关的/tf和固定关节相关的/tf_static话题；但是活动关节的/tf话题需要joint_state_publisher_gui提供/joint_state话题信息才得以完整，否则会导致活动关节无法正常连接从而导致相关link显示异常。
+
+> 阅读第6章教学PPT中最后的escort_launch.py文件，阐述编程思想，列出重点使用到的类及其方法，说明这些方法在程序中的作用。
+
+该launch程序涉及若干节点的启动，首先启动turtlesim_node节点在turtlesim窗口中生成乌龟turtle1，并通过turtle_teleop_key节点在独立控制台窗口实现键盘对turtle1的运动控制。在此之后通过调用3次escort_transform_publisher发布turtle1后、左、右3个方向的/tf_static话题，提供后续护卫乌龟追逐的坐标系id，并通过调用3次spawn函数生成3只后、左、右护卫乌龟。通过调用四次tf_broadcaster函数发布4只乌龟相对于世界坐标系的/tf话题。最后通过调用3次escort_transform_listener_and_twist_publisher函数计算turtle1旁（后、左、右）的某个护卫坐标id相对于某个护卫乌龟id的变换关系，并将该关系转换为控制护卫乌龟运动的话题进行发布。
+
+以上步骤的各个函数应用了若干和TF相关的重要的类，包括：
+
+（1）static_transform_publisher：
+
+能够发布两坐标系之间的静态变换关系/tf_static，即实现了turtle1后、左、右三处坐标id和turtle1自身坐标id的静态变换关系。
+
+（2）TransformBroadcaster：
+
+其中的sendTransform方法能够发布两坐标系的动态变换关系/tf，即实时发布乌龟坐标和世界坐标之间的变换关系/tf。
+
+（3）TransformListener：
+
+通过内嵌的缓存对象的lookup_transform方法计算两坐标系id之间的变换关系，即通过计算护卫坐标id到护卫乌龟id之间的变换关系，以便计算生成/cmd_vel话题控制护卫乌龟运动。
+
+备注，为了避免给同学们带来困扰，以上没有用“目标坐标id”这个词语，因为在此应用中，lookup_transform函数中的参数名“target_frame”取值是护卫乌龟的id，并不是乌龟要运动到的目的地坐标id。

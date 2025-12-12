@@ -3,7 +3,7 @@
   "textFontFamily": "Inter,思源黑体",
   "baseFontSize": 18,
   "baseFontSizeAction": false,
-  "theme": "moonstone",
+  "theme": "system",
   "cssTheme": "Border",
   "accentColor": ""
 }
