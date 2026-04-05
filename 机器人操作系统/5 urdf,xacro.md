@@ -12,11 +12,11 @@
 		- \<gazebo>-gazebo中的仿真参数
 ### 编程
 - urdf文件编写
-	- 格式：![[Pasted image 20251211025605.png]]
-	- 详细内容见[[5 urdf,xacro#urdf文件编写]]
+	- 格式：![[机器人操作系统/assets/Pasted image 20251211025605.png]]
+	- 详细内容见[[机器人操作系统/5 urdf,xacro#urdf文件编写]]
 - 创建功能包
 - 创建子目录
-  ![[Pasted image 20251211025957.png]]
+  ![[机器人操作系统/assets/Pasted image 20251211025957.png]]
 - 编写launch.py
   AI注释过的例程：
 ```python
@@ -88,7 +88,7 @@ data_files=[
     ('share/' + package_name + '/meshes', glob('meshes/*')),
 ],
 ```
-- 为launch添加rviz节点![[Pasted image 20251211032820.png]]
+- 为launch添加rviz节点![[机器人操作系统/assets/Pasted image 20251211032820.png]]
 - 
 #### urdf文件编写
 ##### \<robot>文件

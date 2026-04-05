@@ -8,8 +8,10 @@
   "isTooltip": true,
   "defaultCollapsedLevel": 6,
   "expandAllSubheadings": true,
-  "isDefaultHide": false,
+  "isDefaultHide": true,
   "enableHeadingNowrap": true,
   "barStyle": "enable-edge-style",
-  "enableBarHeadingText": false
+  "enableBarHeadingText": false,
+  "enableContentOffset": false,
+  "enableDragReorder": false
 }

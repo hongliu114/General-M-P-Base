@@ -23,6 +23,7 @@
 | ee      | e^{ }         |
 | invs    | ^{-1}         |
 
+
 | Trigger | Replacement | Trigger | Replacement |
 | ------- | ----------- | ------- | ----------- |
 | @a      | \alpha      | eta     | \eta        |

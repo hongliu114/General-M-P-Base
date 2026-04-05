@@ -3,13 +3,14 @@
   "attachmentFolderPath": "./assets",
   "alwaysUpdateLinks": true,
   "pdfExportSettings": {
-    "includeName": true,
-    "pageSize": "A4",
+    "includeName": false,
+    "pageSize": "A3",
     "landscape": false,
     "margin": "0",
     "downscalePercent": 100
   },
   "newFileLocation": "current",
   "rightToLeft": false,
-  "newLinkFormat": "shortest"
+  "newLinkFormat": "relative",
+  "useMarkdownLinks": false
 }

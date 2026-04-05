@@ -23,7 +23,7 @@ return LaunchDescription([ … ])
 ```
 
 在此过程中可能用到的函数：
-![[Pasted image 20251211013223.png]]
+![[机器人操作系统/assets/Pasted image 20251211013223.png]]
 ## 具体使用与编程
 ### 使用launch文件启动Node节点
 - 导入所需的类
