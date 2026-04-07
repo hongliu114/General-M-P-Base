@@ -11,6 +11,6 @@
   },
   "newFileLocation": "current",
   "rightToLeft": false,
-  "newLinkFormat": "relative",
+  "newLinkFormat": "shortest",
   "useMarkdownLinks": false
 }

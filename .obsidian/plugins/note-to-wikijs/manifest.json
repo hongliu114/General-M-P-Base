@@ -1,0 +1,10 @@
+{
+  "id": "note-to-wikijs",
+  "name": "Note to Wiki.js",
+  "version": "1.0.1",
+  "minAppVersion": "0.15.0",
+  "description": "Upload your notes to Wiki.js through its GraphQL API.",
+  "author": "luashiping",
+  "authorUrl": "https://x.com/baozairuby",
+  "isDesktopOnly": true
+}
