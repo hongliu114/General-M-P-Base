@@ -25,3 +25,6 @@ Thumbs.db
 
 # 课本文件
 book/
+
+# copilot日志
+copilot/
